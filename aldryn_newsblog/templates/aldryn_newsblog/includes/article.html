@@ -40,7 +40,7 @@
         </p>
     {% endif %}
 
-    {% render_model article "lead_in" %}
+    {% render_model article "lead_in" None None 'safe' %}
 
     {% if detail_view %}
         {% render_placeholder article.content language placeholder_language %}
